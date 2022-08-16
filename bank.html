@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome kit -->
+    <script src="https://kit.fontawesome.com/54a75fad29.js" crossorigin="anonymous"></script>
+    <!-- favicon here -->
+    <link rel="shortcut icon" href="./icons/circle-dollar-to-slot-solid.svg" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6 text-violet-500">
+            <i class="fa-solid fa-money-check-dollar"></i>
+            Let's Get Some <span class="font-bold text-violet-600">Mony</span>!!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-600 rounded-xl p-8">
+                    <h4 class="ml-5 text-4xl font-semibold text-white">Deposit</h4>
+                    <h2 class="ml-5 text-3xl font-semibold text-white">$<span id="deposit-total">00</span></h2>
+                </div>
+
+
+                <div class="bg-yellow-400 rounded-xl p-8">
+                    <h4 class="ml-5 text-4xl font-semibold text-white">Withdraw</h4>
+                    <h2 class="ml-5 text-3xl font-semibold text-white">$<span id="withdraw-total">00</span></h2>
+                </div>
+
+
+                <div class="bg-lime-500 rounded-xl p-8">
+                    <h4 class="ml-5 text-4xl font-semibold text-white">Balance</h4>
+                    <h2 class="ml-5 text-3xl font-semibold text-white">$<span id="balance-total">1200</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-blue-400 rounded-xl p-8">
+                    <input type="text" placeholder="Enter your deposit amount" id="user-deposit" class="m-4 p-4 w-9/12 block rounded-full">
+                <button id="btn-deposit" class="bg-amber-400 hover:bg-amber-500 px-8 py-4 rounded-3xl text-white font-semibold mx-2">Deposit</button>
+                </div>
+
+
+                <div class="bg-indigo-500 rounded-xl p-8">
+                    <input type="text" placeholder="Enter your Withdraw amount" id="user-withdraw" class="m-4 p-4 w-9/12 block rounded-full">
+                
+                <button id="btn-withdraw" class="bg-amber-400 hover:bg-amber-500 px-8 py-4 rounded-3xl text-white font-semibold mx-2">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
